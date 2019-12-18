@@ -1,0 +1,20 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: #FFF09E ;
+}
+
+.image {
+  position: relative; 
+  top: 20px; 
+  display: block;
+  margin: auto;
+  width: fit-content;
+  opacity: 0.6;
+
+}
+
+.name{
+  text-align: center;
+  width: auto; 
+}

@@ -6,24 +6,64 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span ID=tweeter>tweeter</span>
     </nav>
-
+    <header>
+        <div class=image>
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div class=name>
+            <h2>Your Name</h2>
+        </div>
+    </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+        <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <div id="alert1" style="display: none">Nah nah nah. Can't be empty!</div>
+            <div id="alert2" style="display: none">Too many letter! Slim down that message!</div>
+            <form id="form" method="POST" action="/tweets/">
+              <textarea id="textbox" name="text" placeholder="What are you humming about?" ></textarea>
+              <br><input id="thatbutton" type="submit" value="Tweet">
+              <span class="counter";>140</span>
+            </form>
+          </section>
+          <br>
+          <section id="tweet-container">
+            <article class="oldtweet">
+              <header class="tweethead">
+                <img src="https://i.imgur.com/nlhLi3I.png"/> 
+                <p class="name">Name:</p>
+                <p class="handle">handle</p>
+              </header>
+              <div class="tweetbody">
+              <p>$(content.text:) </p>            
+              </div>
+              <footer class="tweetfoot">
+               <p class=timecounter>hgjhgcjgfcjg</p>
+              </footer>
+            </article>
+          </section>
+    </main>
   </body>
 </html>

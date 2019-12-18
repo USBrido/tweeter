@@ -1,0 +1,83 @@
+.container {
+  font-style: italic;
+  width: 100%;
+  border-bottom-width: 20px;
+}
+
+#textbox {
+  font-style: italic;
+  margin: 0px;
+  height: 106px;
+  width: 243px;
+  border-bottom-width: 5px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  width: 90%;
+  background-color: #ACA477;
+}
+
+#thatbutton {
+float: left;
+}
+
+.counter {
+float: right;
+margin-right: 10%;
+}
+
+/* #tweetcontainer {
+
+
+} */
+
+.new-tweet {
+  margin-bottom: 10px;
+}
+
+.oldtweet {
+  margin-top: 25px;
+  border: 3px solid white;
+  width: 90%;
+  background-color: #ACA477;
+}
+
+.tweethead {
+  height: 70px;
+  background-color: #ACA477;
+  padding-left: 1em;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.tweethead .name {
+  display: inline-block;
+}
+
+.tweethead .handle {
+float: right;
+margin-right: 5px;
+}
+
+.tweetbody {
+  font-style: italic;
+  padding-left: 1em;
+}
+
+.tweetfoot {
+  background-color: #ACA477;
+  border-top: 1px solid black;
+  padding-top: 5px;
+  padding-left: 1em;
+  padding-bottom: 5px;
+}
+
+.oldtweet:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+  filter: blur(3px);
+}
+
+.oldtweet:hover {
+  box-shadow: 0 0 15px #d35400;
+}

@@ -1,0 +1,17 @@
+
+
+nav {
+  z-index: auto;
+  height: 120px;
+  width: 100%;
+  font-family: source sans pro;
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
+
+#tweeter {
+  position: sticky; top: 50px;
+  font-family: bungee;
+  padding-left: 50px;
+  padding-bottom: 1em;
+}

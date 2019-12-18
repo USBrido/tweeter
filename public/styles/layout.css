@@ -14,10 +14,18 @@ html {
  * Global layout stuff
  */
 
-body {
-  color: #545149;
-  background-color: #f4f1ec;
+body {  
+  color: black;
+  background-color: #FFD473;
+  font-family: 'source sans pro';
   font-size: 24px;
+}
+
+main {
+  align-self: center;
+  width: 90%;
+  margin-left: 5%;
+
 }
 
 /*
