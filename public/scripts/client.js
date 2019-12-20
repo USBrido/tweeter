@@ -5,9 +5,16 @@
  */
 
 $(document).ready(function () {
-  $('#form').click(function(event) {
+  $('#clickhere').click(function(event) {
+    // if ($("new-tweet").css("display: none") === true ) {
+      $(".new-tweet").slideDown(200);
+      $("#textbox").focus();
+      $("#clickhere").hide();
+  });
+
+  $('#form').submit(function(event) {
     event.preventDefault();
-    loadTweets();
+    
     if ($('#textbox').val() === null || $('#textbox').val() === '') {
       $("#alert1").slideDown(200);
     } else {
@@ -18,12 +25,12 @@ $(document).ready(function () {
         console.log('SSomething else:', tweetData);
         renderTweet(tweetData);
         $('#textbox').val('');
-
+        loadTweets();
+        $("#clickhere").show();
+        $(".new-tweet").hide();
       });
     }
-
- 
-
+    
   });
 
   const escape = (str) => {
@@ -39,19 +46,25 @@ $(document).ready(function () {
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+  function timeStamp(miliseconds) {
+   return moment(miliseconds).fromNow();
+    
+  };
+
       let userTweet = `
       <section id="tweet-container">
         <article class="oldtweet">
           <header class="tweethead">
-            <img src="${escape(tweetdata[item].user.avatars)}"/> 
+           <span> <img src="${escape(tweetdata[item].user.avatars)}"/> 
             <p class="name">${escape(tweetdata[item].user.name)}</p>
-            <p class="handle">${escape(tweetdata[item].user.handle)}</p>
+            <p class="handle">${escape(tweetdata[item].user.handle)}</p></span>
           </header>
         <div class="tweetbody">
           <p>${escape(tweetdata[item].content.text)} </p>            
         </div>
         <footer class="tweetfoot">
-        <p class=timecounter>hgjhgcjgfcjg</p>
+        <p class=timecounter>${timeStamp(tweetdata[item].created_at)}
+        <span class="allimages"><i class="far fa-flag"></i><i class="fas fa-sync-alt"></i><i class="fab fa-gratipay"></i></span></p>
         </footer>
         </article>
       </section>`;

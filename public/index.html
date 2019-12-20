@@ -7,7 +7,8 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/ffb9220129.js" crossorigin="anonymous"></script>
+  
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
@@ -16,6 +17,7 @@
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -26,8 +28,9 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span ID=tweeter>tweeter</span>
+      <button type="button" id="clickhere">Write a new tweet!</button>
     </nav>
-    <header>
+    <header class="header">
         <div class=image>
             <img src="/images/profile-hex.png"> 
         </div>
@@ -38,7 +41,7 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-        <section class="new-tweet">
+        <section class="new-tweet" style="display: none">
             <h2>Compose Tweet</h2>
             <div id="alert1" style="display: none">Nah nah nah. Can't be empty!</div>
             <div id="alert2" style="display: none">Too many letter! Slim down that message!</div>
@@ -51,17 +54,7 @@
           <br>
           <section id="tweet-container">
             <article class="oldtweet">
-              <header class="tweethead">
-                <img src="https://i.imgur.com/nlhLi3I.png"/> 
-                <p class="name">Name:</p>
-                <p class="handle">handle</p>
-              </header>
-              <div class="tweetbody">
-              <p>$(content.text:) </p>            
-              </div>
-              <footer class="tweetfoot">
-               <p class=timecounter>hgjhgcjgfcjg</p>
-              </footer>
+            
             </article>
           </section>
     </main>

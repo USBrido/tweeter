@@ -1,20 +1,22 @@
-header {
+.header {
+  position: relative;
   height: 400px;
   width: 100%;
+  top: 120px;
   background-color: #FFF09E ;
 }
 
 .image {
   position: relative; 
-  top: 20px; 
-  display: block;
+  top: 65px; 
+  display: flex;
   margin: auto;
-  width: fit-content;
+  width: 15%;
   opacity: 0.6;
-
 }
 
 .name{
+  margin-top: 30px;
   text-align: center;
   width: auto; 
 }

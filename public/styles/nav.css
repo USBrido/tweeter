@@ -1,17 +1,32 @@
 
 
 nav {
-  z-index: auto;
+  position: fixed;
+  display: block;
+  z-index: 999999;
   height: 120px;
   width: 100%;
-  font-family: source sans pro;
+  font-family: 'source sans pro';
   color: #FFFFFF;
   background-color: #4056A1;
 }
 
 #tweeter {
+  position: fixed;
   position: sticky; top: 50px;
-  font-family: bungee;
+  font-family: 'bungee';
   padding-left: 50px;
   padding-bottom: 1em;
+}
+
+#clickhere {
+  position: fixed;
+  position: sticky; top: 50px;
+  font-family: 'bungee';
+  padding-right: 50px;
+  padding-bottom: 1em;
+  float: right;
+  background-color: #4056A1;
+  border: none;
+  color: #FFFFFF;
 }

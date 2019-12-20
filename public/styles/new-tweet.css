@@ -1,4 +1,6 @@
 .container {
+  position: relative;
+  top: 120px;
   font-style: italic;
   width: 100%;
   border-bottom-width: 20px;
@@ -26,11 +28,6 @@ float: right;
 margin-right: 10%;
 }
 
-/* #tweetcontainer {
-
-
-} */
-
 .new-tweet {
   margin-bottom: 10px;
 }
@@ -48,16 +45,23 @@ margin-right: 10%;
   padding-left: 1em;
   padding-top: 10px;
   display: inline-block;
+  width: 100%;
+}
+
+.tweethead .span {
+  vertical-align: middle;
+  display: inline-flex;
+  padding-top: 5px;
 }
 
 .tweethead .name {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .tweethead .handle {
 float: right;
 margin-right: 5px;
-}
+} 
 
 .tweetbody {
   font-style: italic;
@@ -70,6 +74,27 @@ margin-right: 5px;
   padding-top: 5px;
   padding-left: 1em;
   padding-bottom: 5px;
+  padding-right: 1em;
+}
+
+.tweeter .timecounter {
+  float: left;
+  vertical-align: middle;
+}
+
+.tweetfoot i{
+  float: right;
+  vertical-align: middle;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.allimages {
+  display: none;
+}
+
+.tweetfoot:hover .allimages {
+  display: contents;
 }
 
 .oldtweet:hover:before {
