@@ -4,12 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#clickhere').click(function(event) {
     // if ($("new-tweet").css("display: none") === true ) {
-      $(".new-tweet").slideDown(200);
-      $("#textbox").focus();
-      $("#clickhere").hide();
+    $(".new-tweet").slideDown(200);
+    $("#textbox").focus();
+    $("#clickhere").hide();
   });
 
   $('#form').submit(function(event) {
@@ -21,14 +21,14 @@ $(document).ready(function () {
       $("#alert1").slideUp(200);
 
       $.ajax('/tweets', {method: 'POST', data: $(this).serialize()})
-      .then(function (tweetData) {
-        console.log('SSomething else:', tweetData);
-        renderTweet(tweetData);
-        $('#textbox').val('');
-        loadTweets();
-        $("#clickhere").show();
-        $(".new-tweet").hide();
-      });
+        .then(function(tweetData) {
+          console.log('SSomething else:', tweetData);
+          renderTweet(tweetData);
+          $('#textbox').val('');
+          loadTweets();
+          $("#clickhere").show();
+          $(".new-tweet").hide();
+        });
     }
     
   });
@@ -42,14 +42,14 @@ $(document).ready(function () {
   function renderTweet(tweetdata) {
     for (let item = 0; item < tweetdata.length; item++) {
       const escape = (str) => {
-  const div = document.createElement('div');
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
-};
-  function timeStamp(miliseconds) {
-   return moment(miliseconds).fromNow();
+        const div = document.createElement('div');
+        div.appendChild(document.createTextNode(str));
+        return div.innerHTML;
+      };
+      function timeStamp(miliseconds) {
+        return moment(miliseconds).fromNow();
     
-  };
+      }
 
       let userTweet = `
       <section id="tweet-container">
@@ -74,11 +74,11 @@ $(document).ready(function () {
 
   function loadTweets() {
     $.ajax('/tweets', { method: 'GET' })
-    .then(function (tweetData) {
+      .then(function(tweetData) {
       // console.log('Success: ', tweetData);
-      renderTweet(tweetData);
-    });
-}
-loadTweets();
+        renderTweet(tweetData);
+      });
+  }
+  loadTweets();
 });
 
