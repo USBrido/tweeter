@@ -1,15 +1,7 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(function() {
-  $('#clickhere').click(function(event) {
-    // if ($("new-tweet").css("display: none") === true ) {
+  $('#write_tweet').click(function(event) {
     $(".new-tweet").slideDown(200);
     $("#textbox").focus();
-    $("#clickhere").hide();
   });
 
   $('#form').submit(function(event) {
@@ -17,6 +9,9 @@ $(document).ready(function() {
     
     if ($('#textbox').val() === null || $('#textbox').val() === '') {
       $("#alert1").slideDown(200);
+    } else if ($('#textbox').val().length > 140) {
+      event.preventDefault();
+      return
     } else {
       $("#alert1").slideUp(200);
 
@@ -26,7 +21,7 @@ $(document).ready(function() {
           renderTweet(tweetData);
           $('#textbox').val('');
           loadTweets();
-          $("#clickhere").show();
+          $("#write_tweet").show();
           $(".new-tweet").hide();
         });
     }
@@ -38,7 +33,7 @@ $(document).ready(function() {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
+//renders the tweet in the page
   function renderTweet(tweetdata) {
     for (let item = 0; item < tweetdata.length; item++) {
       const escape = (str) => {

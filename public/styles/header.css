@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  position: flex;
   height: 400px;
   width: 100%;
   top: 120px;
@@ -9,11 +9,11 @@
 }
 
 .image {
-  position: relative; 
+  position: flex; 
+  align-self: auto;
   top: 65px; 
   display: flex;
-  margin: auto;
-  width: 15%;
+  margin: flex;
   opacity: 0.6;
 }
 

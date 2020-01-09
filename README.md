@@ -4,10 +4,10 @@ Tweeter is a simple, single-page Twitter clone. It uses HTML, CSS, JS, jQuery an
 
 ## Final Product
 
-!["Fullscreen View"](https://github.com/USBrido/tweeter/blob/master/public/images/Fullscreen%20Post.png)
-!["Fullscreen Post"](https://github.com/USBrido/tweeter/blob/master/public/images/Fullscreen%20View.png)
-!["Mobile View"](https://github.com/USBrido/tweeter/blob/master/public/images/Mobile%20View.png)
-!["Mobile Post"](https://github.com/USBrido/tweeter/blob/master/public/images/Mobile%20Post.png)
+!["Fullscreen View"](https://github.com/USBrido/tweeter/blob/master/public/documents/Fullscreen%20View.png)
+!["Fullscreen Post"](https://github.com/USBrido/tweeter/blob/master/public/documents/Fullscreen%20Post.png)
+!["Mobile View"](https://github.com/USBrido/tweeter/blob/master/public/documents/Mobile%20View.png)
+!["Mobile Post"](https://github.com/USBrido/tweeter/blob/master/public/documents/Mobile%20Post.png)
 
 ## Dependencies
 

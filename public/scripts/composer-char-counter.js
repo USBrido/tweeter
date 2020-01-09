@@ -1,10 +1,10 @@
 $(document).ready(function() {
-
+//conditional CSS implemented to toogle alerts
   $("#textbox").on('keyup', function(value) {
     let charactersTyped = $(this).val().length;
     let charactersLeft = 140 - charactersTyped;
     $(this).siblings('.counter').text(charactersLeft);
-    if (charactersLeft <= 0) {
+    if (charactersLeft < 0) {
       $("#alert2").slideDown(200);
       $(this).siblings('.counter').css({'color': 'red'});
     } else {

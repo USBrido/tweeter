@@ -1,0 +1,25 @@
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  
+    body {
+      display: flex;
+      align-items:flex-start;
+      padding-right: 5px;
+     }
+  
+     .container {
+       margin-top: 12px;
+     }
+     .tweet p {
+       border-bottom:black solid 4px ;
+     }
+     .image {
+       align: flex;
+     }
+     body > header {
+      margin-top: 121px;
+      margin-right: 34px;
+     }
+
+  }

@@ -17,6 +17,7 @@
   border-right-width: 0px;
   width: 90%;
   background-color: #ACA477;
+  word-wrap: normal;
 }
 
 #thatbutton {
@@ -34,9 +35,11 @@ margin-right: 10%;
 
 .oldtweet {
   margin-top: 25px;
+  margin-right: 10px;
   border: 3px solid white;
   width: 90%;
   background-color: #ACA477;
+  word-wrap: break-word;
 }
 
 .tweethead {

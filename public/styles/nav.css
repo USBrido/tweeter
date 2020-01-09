@@ -19,14 +19,22 @@ nav {
   padding-bottom: 1em;
 }
 
-#clickhere {
+#write_tweet {
   position: fixed;
   position: sticky; top: 50px;
   font-family: 'bungee';
-  padding-right: 50px;
-  padding-bottom: 1em;
+  margin-right: 50px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
   float: right;
   background-color: #4056A1;
   border: none;
   color: #FFFFFF;
+  
+}
+
+#write_tweet:hover {
+  box-shadow: 0 0 15px #d35400;
 }
