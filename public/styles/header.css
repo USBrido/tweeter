@@ -1,19 +1,17 @@
 .header {
-  position: flex;
   height: 400px;
-  width: 100%;
-  top: 120px;
-  background-color: #FFF09E ;
+  background-color: #FFF09E;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
 
 .image {
-  position: flex; 
+  position: relative; 
   align-self: auto;
-  top: 65px; 
+  justify-content: center;
   display: flex;
-  margin: flex;
+  margin: auto;
+  width: auto;
   opacity: 0.6;
 }
 

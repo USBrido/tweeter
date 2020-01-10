@@ -1,5 +1,3 @@
-
-
 nav {
   position: fixed;
   display: block;
@@ -23,6 +21,7 @@ nav {
   position: fixed;
   position: sticky; top: 50px;
   font-family: 'bungee';
+  font-size: inherit;
   margin-right: 50px;
   padding-right: 0px;
   padding-bottom: 0px;

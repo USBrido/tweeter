@@ -1,8 +1,5 @@
 .container {
-  position: relative;
-  top: 120px;
   font-style: italic;
-  width: 100%;
   border-bottom-width: 20px;
 }
 
@@ -25,8 +22,8 @@ float: left;
 }
 
 .counter {
-float: right;
-margin-right: 10%;
+  float: right;
+  margin-right: 10%;
 }
 
 .new-tweet {
@@ -62,8 +59,8 @@ margin-right: 10%;
 }
 
 .tweethead .handle {
-float: right;
-margin-right: 5px;
+  float: right;
+  margin-right: 5px;
 } 
 
 .tweetbody {

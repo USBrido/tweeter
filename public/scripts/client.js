@@ -1,9 +1,16 @@
 $(document).ready(function() {
-  $('#write_tweet').click(function(event) {
-    $(".new-tweet").slideDown(200);
-    $("#textbox").focus();
-  });
 
+  $('#write_tweet').click(function(event) {
+    let newTweet = $(".new-tweet");
+    if (newTweet.css("display") === "none") {
+      newTweet.slideDown(200);
+      $("#textbox").focus();
+    } else {
+      newTweet.slideUp(200);  
+    }
+    });
+
+//form submission logic
   $('#form').submit(function(event) {
     event.preventDefault();
     
